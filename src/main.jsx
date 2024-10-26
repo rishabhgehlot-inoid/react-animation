@@ -8,8 +8,8 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import App, { SideBarLayOut } from "./App";
-import BlogPage from "./components/Pages/BlogPage";
+import { SideBarLayOut } from "./App";
+import GalleryManagement from "./admin/Gallery";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
@@ -17,7 +17,7 @@ const router = createBrowserRouter(
         path="/"
         element={
           <SideBarLayOut>
-            <App />
+            <GalleryManagement />
           </SideBarLayOut>
         }
       />
@@ -25,7 +25,7 @@ const router = createBrowserRouter(
         path="/blog"
         element={
           <SideBarLayOut>
-            <BlogPage />
+            <div></div>
           </SideBarLayOut>
         }
       />

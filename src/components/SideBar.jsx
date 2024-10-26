@@ -1,4 +1,10 @@
-import { Contact, Home, Projector, User } from "lucide-react";
+import {
+  Computer,
+  Contact2,
+  GalleryHorizontal,
+  Phone,
+  Users,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 const SideBar = () => {
@@ -7,20 +13,30 @@ const SideBar = () => {
       <main className="justify-between  flex flex-col gap-5 ">
         <aside className=" font-bold text-xl flex justify-center">LOGO</aside>
         <aside className=" flex flex-col gap-1">
+          <li className="  list-none flex gap-2 items-center hover:bg-orange-400 p-3 rounded-2xl cursor-pointer font-bold">
+            <Users /> Users
+          </li>
           <Link
             to={"/"}
             className="  list-none flex gap-2 items-center hover:bg-orange-400 bg-orange-400 p-3 rounded-2xl cursor-pointer font-bold"
           >
-            <Home /> Home
+            <GalleryHorizontal /> Gallery Management
           </Link>
-          <Link to={'/blog'} className="  list-none flex gap-2 items-center hover:bg-orange-400 p-3 rounded-2xl cursor-pointer font-bold">
-            <Contact /> Contact
+          <Link
+            to={"/"}
+            className="  list-none flex gap-2 items-center hover:bg-orange-400 p-3 rounded-2xl cursor-pointer font-bold"
+          >
+            <Contact2 /> Contact Query
+          </Link>
+
+          <Link
+            to={"/"}
+            className="  list-none flex gap-2 items-center hover:bg-orange-400 p-3 rounded-2xl cursor-pointer font-bold"
+          >
+            <Computer /> Desktop Slider
           </Link>
           <li className="  list-none flex gap-2 items-center hover:bg-orange-400 p-3 rounded-2xl cursor-pointer font-bold">
-            <Projector /> Projects
-          </li>
-          <li className="  list-none flex gap-2 items-center hover:bg-orange-400 p-3 rounded-2xl cursor-pointer font-bold">
-            <User /> Others
+            <Phone /> Mobile Slider
           </li>
         </aside>
       </main>

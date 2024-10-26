@@ -1,5 +1,5 @@
-import VideoCard from "../cards/VideoCard";
-import Container from "../Container";
+import VideoCard from "../components/cards/VideoCard";
+import Container from "../components/Container";
 
 const BlogPage = () => {
   return (
